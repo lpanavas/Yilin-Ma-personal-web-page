@@ -19,13 +19,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="http://localhost:8000/index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Projects</a>
+                    <a class="nav-link" href="http://localhost:8000/index.html#project-container">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Gallery</a>
+                    <a class="nav-link" href="http://localhost:8000/index.html#carousel-gallery">Gallery</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link disabled" href="#">Disabled</a>
@@ -44,9 +44,10 @@
     </div>
 
     <!-- Projects -->
-    <div class="container">
+    <div class="container" id="project-container">
+        <h2 class="mt-5 mb-5">Projects</h2>
         <div class="row">
-            <div class="col-sm-6 col-lg-4">
+            <div class="col-sm-6 col-lg-4 mb-5">
                 <div class="card">
                     <img class="card-img-top" src="static/brain_tumor.png" alt="3D brain tumor visualization">
                     <div class="card-body">
@@ -56,7 +57,7 @@
                 </div>
             </div>
 
-            <div class="col-sm-6 col-lg-4">
+            <div class="col-sm-6 col-lg-4 mb-5">
                 <div class="card">
                     <img class="card-img-top" src="static/vehicle_counting.png" alt="density map">
                     <div class="card-body">
@@ -66,7 +67,7 @@
                 </div>
             </div>
 
-            <div class="col-sm-6 col-lg-4">
+            <div class="col-sm-6 col-lg-4 mb-5">
                 <div class="card">
                     <img class="card-img-top" src="static/cvat.png" alt="cvat UI">
                     <div class="card-body">
@@ -76,7 +77,7 @@
                 </div>
             </div>
 
-            <div class="col-sm-6 col-lg-4">
+            <div class="col-sm-6 col-lg-4 mb-5">
                 <div class="card">
                     <img class="card-img-top" src="static/cloud_disk_ui.png" alt="cloud disk UI">
                     <div class="card-body">
@@ -87,6 +88,44 @@
             </div>
         </div>
     </div>
+
+    <div class="container">
+        <h2 class="mt-5 mb-5">Gallery</h2>
+        <div id="carousel-gallery" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="static/Macau.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="static/Beijing.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="static/Chongqing_boy.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="static/CQU_bangbang.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="static/lamp.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="static/shoe.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="static/warm.webp" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel-gallery" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-gallery" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
