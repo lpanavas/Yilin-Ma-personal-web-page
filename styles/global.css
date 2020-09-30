@@ -9,3 +9,7 @@ body, p, ul, ol {
 .nav .nav-item a:hover {
     text-decoration: underline;
 }
+
+.footer-container p {
+    font-weight: 300;
+}
