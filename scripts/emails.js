@@ -3,8 +3,8 @@ function sendEmail() {
     
     Email.send({
         Host: 'smtp.elasticemail.com',
-        Username: '',
-        Password: '',
+        Username: 'mayilin728@gmail.com',
+        Password: 'E93B2283BE1751EA56779B83027F47B720BA',
         To: emailAddr.value,
         From: 'mayilin728@gmail.com',
         Subject: 'Awesome Pictures from Yilin',
@@ -12,12 +12,32 @@ function sendEmail() {
         Attachments: [
             {
                 name: "Beijing.webp" ,
-                path: "http://localhost/static/Beijing.webp"
+                path: "https://yilin-ma.s3-us-west-1.amazonaws.com/Beijing.webp"
             },
             {
                 name: "Chongqing_boy.webp" ,
-                path: "http://localhost/static/Chongqing_boy.webp"
+                path: "https://yilin-ma.s3-us-west-1.amazonaws.com/CQU_bangbang.webp"
             },
+            {
+                name: "CQU_bangbang.webp",
+                path: "https://yilin-ma.s3-us-west-1.amazonaws.com/CQU_bangbang.webp"
+            },
+            {
+                name: "Macau.webp",
+                path: "https://yilin-ma.s3-us-west-1.amazonaws.com/Macau.webp"
+            },
+            {
+                name: "lamp.webp",
+                path: "https://yilin-ma.s3-us-west-1.amazonaws.com/lamp.webp"
+            },
+            {
+                name: "shoe.webp",
+                path: "https://yilin-ma.s3-us-west-1.amazonaws.com/shoe.webp"
+            },
+            {
+                name: "warm.webp",
+                path: "https://yilin-ma.s3-us-west-1.amazonaws.com/warm.webp"
+            }
         ]
     }).then(
         (message) => {
