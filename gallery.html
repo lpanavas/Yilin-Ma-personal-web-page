@@ -31,6 +31,15 @@
 
     <div class="container">
         <h2 class="mt-5 mb-5">Gallery</h2>
+        
+        <form>
+            <div class="form-group">
+                <label for="email-address">Email Address</label>
+                <input type="email" class="form-control" id="email-address" placeholder="Enter email">
+            </div>
+            <button type="button" class="btn btn-primary" id="send-email">Submit</button>
+        </form>
+        
         <div id="carousel-gallery" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -88,5 +97,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/61407e6705.js" crossorigin="anonymous"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="scripts/emails.js"></script>
 </body>
 </html>
