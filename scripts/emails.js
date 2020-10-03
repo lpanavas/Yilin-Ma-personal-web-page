@@ -1,14 +1,34 @@
 function sendEmail() {
+    let emailAddr = document.querySelector('#email-address');
+    
     Email.send({
         Host: 'smtp.elasticemail.com',
-        Username: 'mayilin728@gmail.com',
-        Password: 'E93B2283BE1751EA56779B83027F47B720BA',
-        To: '1135485226@qq.com',
+        Username: '',
+        Password: '',
+        To: emailAddr.value,
         From: 'mayilin728@gmail.com',
         Subject: 'Awesome Pictures from Yilin',
-        Body: 'Hello World!'
+        Body: 'Pictures are attached. Have a good day!',
+        Attachments: [
+            {
+                name: "Beijing.webp" ,
+                path: "http://localhost/static/Beijing.webp"
+            },
+            {
+                name: "Chongqing_boy.webp" ,
+                path: "http://localhost/static/Chongqing_boy.webp"
+            },
+        ]
     }).then(
-        message => alert(message)
+        (message) => {
+            if (message.trim() === 'OK') {
+                alert('Email was sent successfully.');
+            } else {
+                alert(message);
+            }
+            
+            emailAddr.value = '';
+        }
     );
 }
 
