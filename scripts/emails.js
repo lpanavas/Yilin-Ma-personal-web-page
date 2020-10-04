@@ -42,7 +42,7 @@ function sendEmail() {
     }).then(
         (message) => {
             if (message.trim() === 'OK') {
-                alert('Email was sent successfully.');
+                alert('Email was sent to you successfully.');
             } else {
                 alert(message);
             }
