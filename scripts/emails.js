@@ -3,8 +3,8 @@ function sendEmail() {
     
     Email.send({
         Host: 'smtp.elasticemail.com',
-        Username: 'foo@email.com',
-        Password: 'you_credential',
+        Username: 'mayilin728@gmail.com',
+        Password: 'E93B2283BE1751EA56779B83027F47B720BA',
         To: emailAddr.value,
         From: 'mayilin728@gmail.com',
         Subject: 'Awesome Pictures from Yilin',
