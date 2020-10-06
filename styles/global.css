@@ -1,15 +1,18 @@
-body, p, ul, ol {
-    font-family: 'Roboto', sans-serif;
+body,
+p,
+ul,
+ol {
+  font-family: 'Roboto', sans-serif;
 }
 
 .nav .nav-item a {
-    font-weight: 300;
+  font-weight: 300;
 }
 
 .nav .nav-item a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .footer-container p {
-    font-weight: 300;
+  font-weight: 300;
 }

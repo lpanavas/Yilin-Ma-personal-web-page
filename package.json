@@ -1,0 +1,27 @@
+{
+  "name": "yilin-ma-personal-web-page",
+  "version": "1.0.0",
+  "description": "My personal web page",
+  "main": "scripts/emails.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MartinMa28/Yilin-Ma-personal-web-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MartinMa28/Yilin-Ma-personal-web-page/issues"
+  },
+  "homepage": "https://github.com/MartinMa28/Yilin-Ma-personal-web-page#readme",
+  "devDependencies": {
+    "eslint": "^7.2.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.1.2"
+  }
+}
