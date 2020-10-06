@@ -4,9 +4,7 @@ function sendEmail() {
   let emailAddr = document.querySelector('#email-address');
 
   Email.send({
-    Host: 'smtp.elasticemail.com',
-    Username: 'mayilin728@gmail.com',
-    Password: 'E93B2283BE1751EA56779B83027F47B720BA',
+    SecurityToken: 'feccd058-a86b-4bfb-9449-4d04c6bc3730',
     To: emailAddr.value,
     From: 'mayilin728@gmail.com',
     Subject: 'Awesome Pictures from Yilin',
