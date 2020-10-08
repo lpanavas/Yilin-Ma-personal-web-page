@@ -2,7 +2,8 @@
 
 function sendEmail() {
   let emailAddr = document.querySelector('#email-address');
-
+// This is a real neat and secure tool for sending email. I'm not sure how to do it otherwise but it makes it real easy. 
+//   I'm not really sure where the security comes from. Can't they still see your email here if they want to look at the javascript
   Email.send({
     SecureToken: 'feccd058-a86b-4bfb-9449-4d04c6bc3730',
     To: emailAddr.value,
@@ -49,7 +50,7 @@ function sendEmail() {
     emailAddr.value = '';
   });
 }
-
+// I was a bit confused how you added the function. I just wrote it in write next to the button. This way looks neater.
 document
   .querySelector('#send-email')
   .addEventListener('click', () => sendEmail());
