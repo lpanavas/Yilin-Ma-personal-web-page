@@ -1,3 +1,5 @@
+/* You pretty much used no CSS outside of bootstrap and it still looks really good.  */
+/* instead of using the jumbo container you could use a div with a gray background */
 #image-box img {
   width: 500px;
 }
